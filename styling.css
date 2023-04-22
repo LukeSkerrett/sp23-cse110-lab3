@@ -9,6 +9,8 @@ body{
 
 /* box model (long) */
 .pictureborder{
+    display: block;
+    position: static;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0cm;
@@ -28,15 +30,70 @@ body{
 /* box model (short) */
 .date{
 
+    display: inline;
+    position: sticky;
     margin: 10px 342mm 10px 10px;
 
     padding:10px 10px 10px 10px;
-
+    background-color: #dda0dd;
     border-style: solid;
-    border-color: #FFFFFF;
+    border-color: white;
     border-width: 5px;
 }
+
+/* attendance sheet*/
 .Attendance{
+    display: inherit;
     text-decoration: underline;
     text-align: top ;
+}
+/* agenda portion */
+.Agenda{
+    position: relative;
+}
+
+/* first flex box*/
+.flex{
+    background-color: white;
+    display: flex;
+}
+.flex > div{
+    background-color: plum;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/*business flex box */
+.business{
+    background-color: white;
+    display: flex;
+}
+
+.business > div{
+    background-color: plum;
+    margin: 10px;
+}
+
+/*grid for meeting */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: plum;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+/* button turns plum */
+button:hover{
+    color:plum
+}
+/* active links */
+a:active{
+    color:green
 }
