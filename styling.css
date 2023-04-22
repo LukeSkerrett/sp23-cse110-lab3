@@ -36,5 +36,6 @@ body{
     border-color: #FFFFFF;
     border-width: 5px;
 }
-
-
+.attendance{
+    text-decoration: underline;
+}
