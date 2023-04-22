@@ -36,6 +36,8 @@ body{
     border-color: #FFFFFF;
     border-width: 5px;
 }
-.attendance{
+.Attendance{
     text-decoration: underline;
+    text-align: top ;
+    
 }
