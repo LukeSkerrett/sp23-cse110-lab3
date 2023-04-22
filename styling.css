@@ -36,5 +36,7 @@ body{
     border-color: #FFFFFF;
     border-width: 5px;
 }
-
-
+.Attendance{
+    text-decoration: underline;
+    text-align: top ;
+}
