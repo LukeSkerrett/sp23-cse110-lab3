@@ -2,20 +2,29 @@
 <html lang="en">
 
   <head>
-    <title>
+    <title style>
         Team 23's Meeting Notes
     </title>
     <link rel="icon" type="image/x-icon" href="MJ_favicon.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
+
+    <style>
+      .larisa{
+        background-color: plum;
+        color: black;
+        margin-right: 92%;
+      }
+    </style>
   </head>
 
-  <body>
+  <body id="main">
     <main>
 
       <header>
+
         <h1>
-          Team 23 - Meeting #1
+            Team 23 - Meeting #1
           <br> 
           <div class ="pictureborder">
           <img src= "team_mascots.jpeg" alt= "mj and lebron" height="500" width="725">
@@ -69,7 +78,7 @@
 
       <section>
         <h3>
-        <div class = "business">
+        <div class = "business" target="hi">
           <div style = "flex-grow: 2"> Business </div> <div style = "flex-grow: 1" > and </div> <div style = "flex-grow: 2"> New Business </div> 
         </div>
         </h3>
@@ -107,7 +116,9 @@
       <hr>
       <section>
         <h3>
-          Topical Diagrams / Things to Keep in Mind
+          <div class="Diagram">
+            Topical Diagrams / Things to Keep in Mind
+          </div>
         </h3>
 
         <details>
@@ -136,9 +147,9 @@
 
       <section>
       <h3>
-        <span>
+        <div class="vid">
         Video Recording
-        </span>
+        </div>
       </h3>
 
       <video width="320" height="240" controls>
@@ -246,9 +257,11 @@
             </select>
           </form>
 
-          <form>
-            <button type="button">Larisa Button!</button>
-          </form>
+          <div class="larisa">
+            <form>
+              <button type="button">Larisa Button!</button>
+            </form>
+          </div>
         </fieldset>
       </section>
     </main>
