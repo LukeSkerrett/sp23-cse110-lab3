@@ -1,14 +1,32 @@
 /* file created to handle majority of styling
    for meeting minutes page */
 
-/* color of background of body */
-body{
+
+@font-face {
+    font-family: Instrument;
+    src: url(Instrument_Serif/InstrumentSerif-Regular.ttf);
+}
+@font-face {
+    font-family: Instrument-Italic;
+    src: url(Instrument_Serif/InstrumentSerif-Italic.ttf);
+}
+
+/* combinatorics !!! */
+h3+p{
+    font-family:fantasy;
+}
+
+br~div{
+    font-family: fantasy;
+}
+/* main */
+#main{
     color: hsla(0, 100%, 0, 1);
-    background-color: grey;
+    background-color:lightgrey;
 }
 
 /* box model (long) */
-.pictureborder{
+*.pictureborder{
     display: block;
     position: static;
     margin-top: 10px;
@@ -29,7 +47,7 @@ body{
 
 /* box model (short) */
 .date{
-
+    font-family: Instrument;
     display: inline;
     position: sticky;
     margin: 10px 342mm 10px 10px;
@@ -43,29 +61,35 @@ body{
 
 /* attendance sheet*/
 .Attendance{
+    max-width: fit-content;
+    min-width: none;
     display: inherit;
     text-decoration: underline;
     text-align: top ;
+
 }
 /* agenda portion */
-.Agenda{
+section.Agenda{
+    margin: auto;
     position: relative;
 }
 
 /* first flex box*/
 .flex{
-    background-color: white;
+    background-color: lightgray;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.flex > div{
+.flex div{
     background-color: plum;
-    margin: 10px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 /*business flex box */
-.business{
-    background-color: white;
+.business[target="hi"]{
+    background-color: lightgrey;
     display: flex;
 }
 
@@ -74,20 +98,38 @@ body{
     margin: 10px;
 }
 
-/*grid for meeting */
+/* grid for meeting */
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: white;
+    background-color: lightgray;
     padding: 10px;
+    column-gap: 1dvh;
+    row-gap: 1dvh;
   }
+
+
+  /* grid item for each meeting */
   .grid-item {
+    height: 27px;
     background-color: plum;
     border: 1px solid black;
     padding: 20px;
     font-size: 20px;
     text-align: right;
   }
+
+  /* make grid smaller for mobile devices */
+  @media screen and (min-device-width: 375px) and (max-device-width: 900px){
+    .grid-item {
+        height: 15px;
+        background-color: plum;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 20px;
+        text-align: right;
+      }
+  } 
 
 /* button turns plum */
 button:hover{
@@ -96,4 +138,11 @@ button:hover{
 /* active links */
 a:active{
     color:green
+}
+
+/* diagram and video recording styling */
+.Diagram, .vid{
+    font-family: Instrument-Italic;
+    background-color:plum;
+    margin-right:60em;
 }
